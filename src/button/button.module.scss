@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+.base {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.filled {
+    background: $bg-interactable;
+    color: #FFF;
+    &:hover {
+        background: $bg-interactable-hover;
+    }
+}
+
+.outline {
+    border: 1px solid $bg-interactable;
+    background: rgba($bg-interactable-hover, 0);
+    color: $bg-interactable;
+    &:hover {
+        background: rgba($bg-interactable-hover, 0.1);
+    }
+}
